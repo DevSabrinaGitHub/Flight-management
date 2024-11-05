@@ -60,3 +60,5 @@ Clonar este repositorio
 git clone <URL_DEL_REPOSITORIO>
 cd <NOMBRE_DEL_REPOSITORIO>
 
+pyuic5 -x login.ui -o login_ui.py ejecutar ui
+
