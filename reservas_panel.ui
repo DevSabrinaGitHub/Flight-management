@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReservasPanelWindow</class>
+ <widget class="QMainWindow" name="ReservasPanelWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Panel de Reservas - Aerolínea XYZ</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+
+   <!-- Botones CRUD -->
+   <widget class="QPushButton" name="btn_ver_reservas">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ver Reservas</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_agregar_reserva">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>20</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Agregar Reserva</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_modificar_reserva">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>20</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Modificar Reserva</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_eliminar_reserva">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>20</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Eliminar Reserva</string>
+    </property>
+   </widget>
+
+   <!-- Tabla para mostrar reservas -->
+   <widget class="QTableWidget" name="tabla_reservas">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>850</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="columnCount">
+     <number>7</number>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+   </widget>
+
+   <!-- Campos de entrada para agregar/modificar una reserva -->
+   <widget class="QLineEdit" name="input_dni_pasajero">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>390</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>DNI del Pasajero</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_nombre_pasajero">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>390</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Nombre del Pasajero</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_apellido_pasajero">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>390</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Apellido del Pasajero</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_vuelo_id">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>390</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>ID Vuelo</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="input_fecha_creacion">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>430</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="input_estado_reserva">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>430</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Pagada</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>En Espera</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="input_asiento_clase">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>430</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Normal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Turista</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Premium</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="input_precio">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>430</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Precio</string>
+    </property>
+   </widget>
+
+   <!-- Etiqueta de estadísticas -->
+   <widget class="QLabel" name="label_estadisticas">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>470</y>
+      <width>850</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Estadísticas</string>
+    </property>
+   </widget>
+
+   <!-- Botón para volver al menú principal -->
+   <widget class="QPushButton" name="btn_volver_menu">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Volver al Menú</string>
+    </property>
+   </widget>
+
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

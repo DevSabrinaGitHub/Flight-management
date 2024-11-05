@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminPanelWindow</class>
+ <widget class="QMainWindow" name="AdminPanelWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Panel de Administración - Aerolínea XYZ</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+
+   <!-- Botones CRUD -->
+   <widget class="QPushButton" name="btn_ver_aviones">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ver Aviones</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_agregar_avion">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>20</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Agregar Avión</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_modificar_avion">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>20</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Modificar Avión</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_eliminar_avion">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Eliminar Avión</string>
+    </property>
+   </widget>
+
+   <!-- Tabla para mostrar aviones -->
+   <widget class="QTableWidget" name="tabla_aviones">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>850</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="columnCount">
+     <number>7</number>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+   </widget>
+
+   <!-- Campos de entrada de datos del avión -->
+   <widget class="QLineEdit" name="input_matricula">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Matrícula</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_nombre">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>400</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Nombre</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_marca">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>400</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Marca</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_modelo">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>400</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Modelo</string>
+    </property>
+   </widget>
+
+   <!-- Asientos -->
+   <widget class="QLineEdit" name="input_asientos_normal">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>440</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Asientos Normal</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_asientos_turista">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>440</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Asientos Turista</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_asientos_premium">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>440</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Asientos Premium</string>
+    </property>
+   </widget>
+
+   <!-- Kilometraje y Checkbox en Vuelo -->
+   <widget class="QLineEdit" name="input_kilometraje">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>440</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Kilometraje</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkbox_en_vuelo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>480</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>En Vuelo</string>
+    </property>
+   </widget>
+
+   <!-- Etiqueta para estadísticas -->
+   <widget class="QLabel" name="label_estadisticas">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>850</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Estadísticas</string>
+    </property>
+   </widget>
+
+   <!-- Botón para volver al menú principal -->
+   <widget class="QPushButton" name="btn_volver_menu">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>560</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Volver al Menú</string>
+    </property>
+   </widget>
+
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

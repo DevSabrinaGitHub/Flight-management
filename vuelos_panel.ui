@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VuelosPanelWindow</class>
+ <widget class="QMainWindow" name="VuelosPanelWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Panel de Vuelos - Aerolínea XYZ</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+
+   <!-- Botones CRUD -->
+   <widget class="QPushButton" name="btn_ver_vuelos">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ver Vuelos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_agregar_vuelo">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>20</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Agregar Vuelo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_modificar_vuelo">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>20</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Modificar Vuelo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_eliminar_vuelo">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Eliminar Vuelo</string>
+    </property>
+   </widget>
+
+   <!-- Tabla para mostrar vuelos -->
+   <widget class="QTableWidget" name="tabla_vuelos">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>850</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="columnCount">
+     <number>6</number>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+   </widget>
+
+   <!-- Etiquetas y campos de entrada de datos del vuelo -->
+   <widget class="QLineEdit" name="input_avion_id">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>390</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>ID Avión</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_origen">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>390</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Ciudad Origen</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_destino">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>390</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Ciudad Destino</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="input_fecha_partida">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>390</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string>Fecha de Partida</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="input_fecha_llegada">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>430</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string>Fecha de Llegada</string>
+    </property>
+   </widget>
+
+   <!-- Etiqueta para estadísticas -->
+   <widget class="QLabel" name="label_estadisticas">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>470</y>
+      <width>850</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Estadísticas</string>
+    </property>
+   </widget>
+
+   <!-- Botón para volver al menú -->
+   <widget class="QPushButton" name="btn_volver_menu">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Volver al Menú</string>
+    </property>
+   </widget>
+
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
